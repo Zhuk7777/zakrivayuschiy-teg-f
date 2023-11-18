@@ -15,10 +15,102 @@
 */
 
 .page {
+  color: var(--accent-color);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--card-text-weight);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 102px auto 104px; 
+  border: 2px solid var(--accent-color); 
+  padding-block-start: clamp(7.5rem, 6.3318rem + 4.9844vw, 8.5rem);
+  padding-block-end: 25px;
+  font-family: var( --accent-font, serif);
+  font-weight: 400;
   background-color: var(--background-color);
-  color: var(--accent-color);
+  inline-size: 100%;
+  max-inline-size: 700px;
+}
+
+.header__title {
+  font-weight: inherit;
+  font-size: clamp(3.0625rem, 1.921rem + 4.9231vw, 4.0625rem);
+  line-height: 1em;
+}
+
+.header__subtitle {
+  margin: 20px 0 25px;
+  font-weight: inherit;
+  font-size: clamp(0.875rem, 0.2329rem + 2.7692vw, 1.4375rem);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-inline-end: 8px;
+}
+
+.theme-menu__button {
+  position: relative;
+  display: block;
+  border: none;
+  font-weight: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: inherit; 
+  inline-size: 70px;
+  block-size: 14px;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  inline-size: 16px;
+  block-size: 13px;
+}
+
+.history {
+  margin: 0 auto; 
+  inline-size: 100%;
+  max-inline-size: 700px;
+}
+
+.card {
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color); 
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 21.78px;
+  font-variation-settings: 'wght' var(--card-title-weight);
+  padding: 5px 10px;
+}
+
+.card__image {
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.card__text {
+  padding: 25px;
+  font-size: 18px;
+  line-height: 21px;
 }
