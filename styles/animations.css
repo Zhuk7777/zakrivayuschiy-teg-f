@@ -13,7 +13,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: flash 0.3s 0.3s ease-in;
+  animation: flash 0.3s 0.3s alternate;
 }
 
 @keyframes flash {
@@ -76,7 +76,7 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heartbeat 0.3s 0.1s ease-in;
+  animation: heartbeat 0.3s 0.1s alternate;
 }
 
 @keyframes heartbeat {
