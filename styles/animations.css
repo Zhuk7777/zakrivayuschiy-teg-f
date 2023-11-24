@@ -13,7 +13,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: flash 0.3s 0.3s alternate;
+  animation: flash 0.3s 0.3s ease-in alternate;
 }
 
 @keyframes flash {
@@ -76,17 +76,16 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heartbeat 0.3s 0.1s alternate;
+  transform-origin: center;
+  animation: heartbeat 0.3s 0.1s ease-in alternate;
 }
 
 @keyframes heartbeat {
   from {
     transform: scale(1);
-    transform-origin: center;
   }
 
   to {
     transform: scale(1.5);
-    transform-origin: center;
   }
 }
